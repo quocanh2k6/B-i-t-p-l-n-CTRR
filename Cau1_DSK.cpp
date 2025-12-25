@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <iomanip> // Thư viện để căn lề (setw)
+#include <iomanip> 
 
 using namespace std;
 
@@ -22,7 +22,7 @@ int main() {
     
     for (int i = 0; i < m; i++) {
         int u, v, w;
-        cin >> u >> v >> w; // Thay in >> bằng cin >>
+        cin >> u >> v >> w; 
         
         // Đồ thị vô hướng: a[u][v] = a[v][u] = trọng số
         matrix[u][v] = w;
@@ -34,7 +34,7 @@ int main() {
     
     // In hàng tiêu đề số đỉnh
     cout << "      ";
-    for(int i = 1; i <= n; i++) cout << setw(5) << i; // Tăng độ rộng lên 5 cho đẹp
+    for(int i = 1; i <= n; i++) cout << setw(5) << i; 
     cout << endl << endl;
 
     // In nội dung ma trận
